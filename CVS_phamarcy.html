@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CVS phamarcy</title>
+        <style>
+             html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body{
+height:100%; 
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content .header{ 
+border:1px solid #ccc;
+border-bottom:0 !important; 
+height:110px;
+width:100%; 
+color:white;
+background-color:red;
+box-shadow:0px 5px 5px #ccc; 
+display:flex; 
+flex-direction:column; 
+align-items:center; 
+justify-content:space-evenly; 
+}
+.content .header .logo_head{
+height:40px; 
+width:40px; 
+}
+.content .header .paragraph .cvs{ 
+font-size:40px; 
+font-weight:bold; 
+}
+ .content .header .paragraph .p_tag{
+font-size:20px; 
+font-weight:bold; 
+}
+ .header .paragraph input[type="text"]{
+   width:220px;  
+   margin:40px; 
+}
+.content .sub_hearder{ 
+width:80%; 
+margin:0px auto 16px auto !important;
+padding:10px; 
+color:white; 
+background-color:#7c0000;
+z-index:1;
+display:flex; 
+align-items:center; 
+justify-content:space-between; 
+box-shadow:0px 5px 5px #ccc; 
+}
+.sub_hearder .sub_hearder_img{
+height:30px; 
+width:30px
+}
+#chevron{ 
+font-size:20px; 
+font-weight:bold; 
+}
+.body_content_item{
+border:0.1 solid #ccc;
+box-shadow:5px 5px 5px 5px  #ccc;
+margin:5px !important;
+padding:5px; 
+height:105px; 
+width:40vw;   
+}
+.body_content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center; 
+  justify-items:center;
+  grid-gap:5px; 
+  }
+.footer .footer_img{
+width:20px;
+height:20px; 
+}
+.body_content_item .body_content_img{
+height:20px; 
+width:20px;
+align-self:flex-end;  
+} 
+.body_content .body_content_item{
+display:flex; 
+flex-direction:column; 
+align-items:center; 
+justify-content:space-between; 
+}
+.body_content .body_content_item .l{
+font-size: 15px; 
+font-weight:bold; 
+letter-spacing:2px; 
+}
+.body_content .body_content_item .y{
+font-size:10px; 
+color:#7c0000; 
+margin-bottom:20px; 
+}
+.footer{
+flex-shrink:0;
+border:0.1px solid #ccc; 
+height:40px; 
+width:100%; 
+background-color:#ccc; 
+display:flex; 
+align-items:center; 
+justify-content:space-evenly; 
+margin-top:10px; 
+} 
+.footer .footer_items .footer_txt{ 
+display:block; 
+font-size:5px; 
+font-weight:bold; 
+}
+body .html_content {
+  flex: 1 0 auto;
+}
+@media (min-width:768px){
+.body_content{
+grid-template-columns:repeat(3,1fr); 
+}
+.body_content_item .body_content_img{
+width:60px; 
+  }
+}
+      </style>
+    </head>
+    <body>
+       <div class="html_content"> 
+        <div class="content">
+            <header class="header">
+                <div class="paragraph">
+                    <img class="logo_head" src="https://image.flaticon.com/icons/svg/1077/1077035.svg">
+                    <span class="cvs">CVS</span> 
+                    <span class="p_tag">phamarcy</span> 
+                 </div>
+                 <input type="text" placeholder="search">
+            </header>
+            <div class="sub_hearder">
+               <p>we have Rx + more<br>find out know  <span id="chevron">></span></p>
+               <img class="sub_hearder_img" src="https://image.flaticon.com/icons/svg/709/709790.svg">
+            </div>
+         </div>
+         <div class="body_content">
+            <div class="body_content_item">
+                 <span class="l">phamarcy</span>
+                 <span class="y">2Rx ready for refill</span>
+                 <img src="https://image.flaticon.com/icons/svg/3076/3076840.svg" class="body_content_img"> 
+            </div>
+            <div class="body_content_item">
+                 <span class="l">Deatails & reward</span>
+                 <span class="y">2Cvs care offers expiring</span>
+                 <img src="https://image.flaticon.com/icons/svg/2331/2331798.svg" class="body_content_img"> 
+            </div>
+            <div class="body_content_item">
+                 <span class="l">second clinic</span>
+                 <img src="https://www.flaticon.com/premium-icon/icons/svg/3031/3031672.svg" class="body_content_img"> 
+            </div>
+            <div class="body_content_item">
+                 <span class="l">shop</span>
+                 <span class="y">free shopping at offers $25+</span>
+                 <img src="https://image.flaticon.com/icons/svg/891/891606.svg" class="body_content_img"> 
+            </div>
+            <div class="body_content_item">
+                 <span class="l">photos</span>
+                 <img src="https://image.flaticon.com/icons/svg/1160/1160553.svg" class="body_content_img"> 
+            </div>
+            <div class="body_content_item">
+                 <span class="l">weekly ads</span>
+                 <span class="y">view your weekly ads</span>
+                 <img src="https://image.flaticon.com/icons/svg/2534/2534483.svg" class="body_content_img"> 
+            </div>
+         </div>
+       </div>
+    <footer class="footer">
+         <div class="footer_items">
+             <img class="footer_img" src="https://image.flaticon.com/icons/svg/937/937475.svg">
+             <span class="footer_txt">Home</span>
+         </div>
+         <div class="footer_items">
+             <img class="footer_img" src="https://image.flaticon.com/icons/svg/3014/3014279.svg">
+             <span class="footer_txt">Show card</span>
+         </div>
+         <div class="footer_items">
+             <img class="footer_img" src="https://www.flaticon.com/premium-icon/icons/svg/3106/3106921.svg">
+             <span class="footer_txt">Account</span>
+         </div>
+         <div class="footer_items">
+             <img class="footer_img" src="https://image.flaticon.com/icons/svg/2928/2928889.svg">
+             <span class="footer_txt">location</span>
+         </div>
+    </footer>
+        
+    </body>
+</html>
