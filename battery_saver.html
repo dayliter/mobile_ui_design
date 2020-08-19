@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width","initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8300c7a55e.js" crossorigin="anonymous"></script>
+        <title>battery_saver</title>
+        <link href="battery.css"  rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+        <style>
+             *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    color:#fff;
+    background-color:#000;
+}
+.content .header{
+    height:70px;
+    width:100%;
+    background:#2a293d;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    font-size:30px;
+    font-weight:bolder;
+    padding:15px;
+}
+.header .icon{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-family:'roboto',san-serif;
+}
+.content .power{
+    height:60px;
+    width:90%;
+    margin:16px auto 0 auto;
+    border-radius:30px;
+    background:#2a293d;
+}
+.power .power_icon{
+    height:100%;
+    width:75%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+    font-size:20px;
+    font-weight:bolder;
+}
+.power .power_icon2{
+    height:100%;
+    width:70%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+    font-size:20px;
+    font-weight:bolder;
+}
+.power .power_icon3{
+    height:100%;
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+    font-size:20px;
+    font-weight:bolder;
+}
+.power .power_icon3 .badge{
+    height:30px;
+    width:30px;
+    border-radius:5px;
+    background-color:#2000ffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.power .power_icon i{
+    color:green;
+    font-size:25px;
+}
+.power .power_icon2 i{
+    color:yellow;
+    font-size:25px;
+}
+.content .battery{
+  height: 200px;
+  width: 90%;
+  margin: 16px auto 0 auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background: #2a293d;
+}
+.battery .battery_logo{
+  position: relative;
+  height: 200px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.battery .battery_info{
+  height: 200px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.battery_logo .logo{
+  margin-left: 10px;
+}
+.battery_logo .text{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  transform: translate(50%,50%);
+  padding-top: 35px;
+  font-size:30px;
+  font-weight: bolder;
+}
+.battery_logo .logo circle{
+  position: relative;
+  height: 50%;
+  width: 50%;
+  fill: black;
+  stroke: #18fa00;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  transform: translate(20px,20px);
+}  
+.battery_logo .text span{
+  font-kerning: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.battery_info .operation{
+  height: 70%;
+  width: 100%;
+}
+.battery_info .button{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  background: #18fa00;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.battery_info .operation .span_text{
+  width: 100%;
+  height: 25%;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.operation .span_text .head{
+  font-size: 15px;
+  font-weight: border;
+  text-transform: capitalize;
+  color: #ccc;
+}
+.operation .span_text .value{
+  font-size: 20px;
+  font-weight: border;
+  margin-right:10px ;
+}
+.power .power_icon span{
+    font-family:'roboto',san-serif;
+    text-transform:capitalize;
+}
+.power .power_icon2 span{
+    font-family:'roboto',san-serif;
+    text-transform:capitalize;
+}
+.power .power_icon3 span{
+    font-family:'roboto',san-serif;
+    text-transform:capitalize;
+}
+.battery .battery_logo:hover{
+    transform:translate(-10px);
+    box-shadow:0 15px 35px rgba(0 ,0 ,0 ,.5);
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <nav class="header">
+                <i class="fa fa-align-left"></i>
+                <span class="icon">battery</span>
+                <i class="fas fa-cog"></i>
+            </nav>
+         <div class="battery">
+          <div class="battery_logo">
+            <svg class="logo">
+              <circle cx="50" cy="50" r="50">
+            </svg>
+            <div class="text">100<span>%</span></div>
+          </div>
+          <div class="battery_info">
+            <div class="operation">
+              <div  class="span_text">
+                <span class="head">state</span>
+                <span class="value">charging</span>
+              </div>
+              <div  class="span_text">
+                <span class="head">voltage</span>
+                <span class="value">3.1</span>
+              </div>
+              <div  class="span_text">
+                <span class="head">temperature</span>
+                <span class="value">25c</span>
+              </div>
+              <div  class="span_text">
+                <span class="head">capacity</span>
+                <span class="value">3000mah</span>
+              </div>
+            </div>
+            <div class="button">
+              <span>Optimize</span>
+            </div>
+          </div>
+        </div>
+            <section class="power">
+                <div class="power_icon">
+                    <i class="fas fa-battery-full"></i>
+                    <span>power mode</span>
+                </div>
+            </section>
+            <section class="power">
+                <div class="power_icon2">
+                    <i class="fas fa-signal"></i>
+                    <span>rank</span>
+                </div>
+            </section>
+            <section class="power">
+                <div class="power_icon3">
+                    <div class="badge">
+                     <i class="fas fa-bahai"></i>
+                    </div>
+                    <span>battery cooler</span>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
